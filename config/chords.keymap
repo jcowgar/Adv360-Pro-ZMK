@@ -40,11 +40,11 @@ name: name##_macro {                  \
   #binding-cells = <0>;               \
   tap-ms = <1>;                       \
   wait-ms = <1>;                      \
-  bindings = <keys>, <&to SENTENCE>;  \
+  bindings = <keys>, <&to 0>;  \
 };
 
 / {
   macros {
-    CMAC(ch_the, &kp T &kp H &kp E &kp SPC) // t+h+e -> the
+    CHMAC(ch_the, &kp T &kp H &kp E &kp SPC) // t+h+e -> the
 	};
 };
