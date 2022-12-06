@@ -14,7 +14,7 @@ chord_##name {                                    \
 };
 
 #define CHORD(name, keypress, keypos) \
-  LAYER_CHORD(name, keypress, keypos, ALPHA SENTENCE)
+  LAYER_CHORD(name, keypress, keypos, 0)
 
 / {
 	combos {
