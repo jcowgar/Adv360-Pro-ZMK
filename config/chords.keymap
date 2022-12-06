@@ -16,13 +16,6 @@ chord_##name {                                    \
 #define CHORD(name, keypress, keypos) \
   LAYER_CHORD(name, keypress, keypos, 0)
 
-/ {
-	combos {
-		compatible = "zmk,combos";
-		CHORD(ch_the, &ch_the, 1 2) // t+h+e -> the
-	};
-};
-
 #define MACRO(name, keys)             \
 name: name##_macro {                  \
   label = #name;                      \
@@ -44,7 +37,31 @@ name: name##_macro {                  \
 };
 
 / {
-  macros {
-    CHMAC(ch_the, &kp T &kp H &kp E &kp SPC) // t+h+e -> the
+	combos {
+		compatible = "zmk,combos";
+		CHORD(ch_are, &ch_are, 29 30 42)
+		CHORD(ch_as, &ch_as, 29 31)
+		CHORD(ch_do, &ch_do, 33 44)
+		CHORD(ch_had, &ch_had, 40 29 33)
+		CHORD(ch_have, &ch_have, 40 29 50)
+		CHORD(ch_that, &ch_that, 32 40 29)
+		CHORD(ch_the, &ch_the, 32 40 42)
+		CHORD(ch_these, &ch_these, 32 40 42 31)
+		CHORD(ch_to, &ch_to, 32 44)
 	};
 };
+
+/ {
+	macros {
+		CHMAC(ch_are, &kp A &kp R &kp E)
+		CHMAC(ch_as, &kp A &kp S)
+		CHMAC(ch_do, &kp D &kp O)
+		CHMAC(ch_had, &kp H &kp A &kp D)
+		CHMAC(ch_have, &kp H &kp A &kp V)
+		CHMAC(ch_that, &kp T &kp H &kp A)
+		CHMAC(ch_the, &kp T &kp H &kp E)
+		CHMAC(ch_these, &kp T &kp H &kp E &kp S)
+		CHMAC(ch_to, &kp T &kp O)
+	};
+};
+
