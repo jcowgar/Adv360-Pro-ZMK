@@ -1,13 +1,13 @@
 #define COMBO(name, keypress, keypos) \
 combo_##name {                        \
-  timeout-ms = <40>;                  \
+  timeout-ms = <60>;                  \
   bindings = <keypress>;              \
   key-positions = <keypos>;           \
 };
 
 #define LAYER_CHORD(name, keypress, keypos, lays) \
 chord_##name {                                    \
-  timeout-ms = <40>;                              \
+  timeout-ms = <60>;                              \
   bindings = <keypress>;                          \
   key-positions = <keypos>;                       \
   layers = <lays>;                                \
@@ -58,7 +58,7 @@ name: name##_macro {                  \
 		CHORD(ch_did, &ch_did, 33 43 33)
 		CHORD(ch_do, &ch_do, 33 44)
 		CHORD(ch_find, &ch_find, 17 41 33)
-		CHORD(ch_found, &ch_found, 17 44 24 41 33)
+		CHORD(ch_found, &ch_found, 17 44 41 33)
 		CHORD(ch_go, &ch_go, 19 44)
 		CHORD(ch_good, &ch_good, 19 44 33)
 		CHORD(ch_got, &ch_got, 19 44 32)
@@ -90,6 +90,8 @@ name: name##_macro {                  \
 		CHORD(ch_up, &ch_up, 24 18)
 		CHORD(ch_what, &ch_what, 16 40)
 		CHORD(ch_what, &ch_what, 16 40 32)
+		CHORD(ch_when, &ch_when, 16 40 42)
+		CHORD(ch_we, &ch_we, 16 42)
 		CHORD(ch_why, &ch_why, 16 40 25)
 		CHORD(ch_would, &ch_would, 16 23 33)
 		CHORD(ch_you, &ch_you, 25 24)
@@ -149,6 +151,8 @@ name: name##_macro {                  \
 		CHMAC(ch_up, &kp U &kp P &kp SPC)
 		CHMAC(ch_what, &kp W &kp H &kp A &kp T &kp SPC)
 		CHMAC(ch_what, &kp W &kp H &kp A &kp T &kp SPC)
+		CHMAC(ch_when, &kp W &kp H &kp E &kp N &kp SPC)
+		CHMAC(ch_we, &kp W &kp E &kp SPC)
 		CHMAC(ch_why, &kp W &kp H &kp Y &kp SPC)
 		CHMAC(ch_would, &kp W &kp O &kp U &kp L &kp D &kp SPC)
 		CHMAC(ch_you, &kp Y &kp O &kp U &kp SPC)
