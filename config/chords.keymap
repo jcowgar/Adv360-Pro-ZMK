@@ -19,7 +19,7 @@ chord_##name {                                    \
 / {
 	combos {
 		compatible = "zmk,combos";
-		CHORD(ch_the, &ch_the, 32 37) // tn
+		CHORD(ch_the, &ch_the, 32 41) // tn
 	};
 };
 
