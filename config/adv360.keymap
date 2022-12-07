@@ -7,6 +7,67 @@
 #include "chords.keymap"
 
 #define DAG(keycode) &hold_prefer_##keycode 0 0
+// Same, but dismisses sentence mode
+#define str(s) #s
+#define DISMISS_MACRO(key)                 \
+macros {                                   \
+  sentence_##key: sentence_##key {         \
+    label = str(sentence_##key);           \
+    compatible = "zmk,behavior-macro";     \
+    #binding-cells = <0>;                  \
+    tap-ms = <1>;                          \
+    wait-ms = <1>;                         \
+    bindings = <&to ALPHA &kp key>;        \
+  };                                       \
+  lg_sentence_##key: lg_sentence_##key {   \
+    label = str(lg_sentence_##key);        \
+    compatible = "zmk,behavior-macro";     \
+    #binding-cells = <0>;                  \
+    tap-ms = <1>;                          \
+    wait-ms = <1>;                         \
+    bindings = <&to ALPHA &kp LG(key)>;    \
+  };                                       \
+};                                         \
+behaviors {                                \
+  hold_prefer_##key: hold_prefer_##key {   \
+    compatible = "zmk,behavior-hold-tap";  \
+    label = str(hold_prefer_##key);        \
+    #binding-cells = <2>;                  \
+    tapping_term_ms = <200>;               \
+    quick_tap_ms = <0>;                    \
+    flavor = "tap-preferred";              \
+    bindings = <&lg_sentence_##key>, <&sentence_##key>;  \
+  };                                       \
+};
+/ {
+  DISMISS_MACRO(A)
+  DISMISS_MACRO(B)
+  DISMISS_MACRO(C)
+  DISMISS_MACRO(D)
+  DISMISS_MACRO(E)
+  DISMISS_MACRO(F)
+  DISMISS_MACRO(G)
+  DISMISS_MACRO(H)
+  DISMISS_MACRO(I)
+  DISMISS_MACRO(J)
+  DISMISS_MACRO(K)
+  DISMISS_MACRO(L)
+  DISMISS_MACRO(M)
+  DISMISS_MACRO(N)
+  DISMISS_MACRO(O)
+  DISMISS_MACRO(P)
+  DISMISS_MACRO(Q)
+  DISMISS_MACRO(R)
+  DISMISS_MACRO(S)
+  DISMISS_MACRO(T)
+  DISMISS_MACRO(U)
+  DISMISS_MACRO(V)
+  DISMISS_MACRO(W)
+  DISMISS_MACRO(X)
+  DISMISS_MACRO(Y)
+  DISMISS_MACRO(Z)
+  DISMISS_MACRO(RET)
+};
 
 / {
   behaviors {
