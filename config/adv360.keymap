@@ -17,7 +17,7 @@ macros {                                   \
     #binding-cells = <0>;                  \
     tap-ms = <1>;                          \
     wait-ms = <1>;                         \
-    bindings = <&to ALPHA &kp key>;        \
+    bindings = <&to 0 &kp key>;        \
   };                                       \
   lg_sentence_##key: lg_sentence_##key {   \
     label = str(lg_sentence_##key);        \
@@ -25,7 +25,7 @@ macros {                                   \
     #binding-cells = <0>;                  \
     tap-ms = <1>;                          \
     wait-ms = <1>;                         \
-    bindings = <&to ALPHA &kp LG(key)>;    \
+    bindings = <&to 0 &kp LG(key)>;    \
   };                                       \
 };                                         \
 behaviors {                                \
