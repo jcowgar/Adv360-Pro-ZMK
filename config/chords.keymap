@@ -19,7 +19,7 @@ chord_##name {                                    \
 / {
 	combos {
 		compatible = "zmk,combos";
-		CHORD(ch_the, &ch_the, 1 2) // t+h+e -> the
+		CHORD(ch_the, &ch_the, 32 37) // tn
 	};
 };
 
@@ -45,6 +45,6 @@ name: name##_macro {                  \
 
 / {
   macros {
-    CHMAC(ch_the, &kp T &kp H &kp E &kp SPC) // t+h+e -> the
+    CHMAC(ch_the, &kp ESC) // t+h+e -> the
 	};
 };
