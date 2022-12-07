@@ -1,13 +1,13 @@
 #define COMBO(name, keypress, keypos) \
 combo_##name {                        \
-  timeout-ms = <30>;                  \
+  timeout-ms = <40>;                  \
   bindings = <keypress>;              \
   key-positions = <keypos>;           \
 };
 
 #define LAYER_CHORD(name, keypress, keypos, lays) \
 chord_##name {                                    \
-  timeout-ms = <30>;                              \
+  timeout-ms = <40>;                              \
   bindings = <keypress>;                          \
   key-positions = <keypos>;                       \
   layers = <lays>;                                \
@@ -74,17 +74,17 @@ name: name##_macro {                  \
 		CHMAC(ch_the, &kp T &kp H &kp E &kp SPC)
 		CHMAC(ch_these, &kp T &kp H &kp E &kp S &kp SPC)
 		CHMAC(ch_to, &kp T &kp O &kp SPC)
-		CHMAC(ch_ten, &kp 1 &kp 0 &kp SPC)
-		CHMAC(ch_eleven, &kp 1 &kp 1 &kp SPC)
-		CHMAC(ch_twelve, &kp 1 &kp 2 &kp SPC)
-		CHMAC(ch_thirteen, &kp 1 &kp 3 &kp SPC)
-		CHMAC(ch_fourteen, &kp 1 &kp 4 &kp SPC)
-		CHMAC(ch_fifteen, &kp 1 &kp 5 &kp SPC)
-		CHMAC(ch_sixteen, &kp 1 &kp 6 &kp SPC)
-		CHMAC(ch_seventeen, &kp 1 &kp 7 &kp SPC)
-		CHMAC(ch_eighteen, &kp 1 &kp 8 &kp SPC)
-		CHMAC(ch_nineteen, &kp 1 &kp 9 &kp SPC)
-		CHMAC(ch_twenty, &kp 2 &kp 0 &kp SPC)
+		CHMAC(ch_ten, &kp N1 &kp N0 &kp SPC)
+		CHMAC(ch_eleven, &kp N1 &kp N1 &kp SPC)
+		CHMAC(ch_twelve, &kp N1 &kp N2 &kp SPC)
+		CHMAC(ch_thirteen, &kp N1 &kp N3 &kp SPC)
+		CHMAC(ch_fourteen, &kp N1 &kp N4 &kp SPC)
+		CHMAC(ch_fifteen, &kp N1 &kp N5 &kp SPC)
+		CHMAC(ch_sixteen, &kp N1 &kp N6 &kp SPC)
+		CHMAC(ch_seventeen, &kp N1 &kp N7 &kp SPC)
+		CHMAC(ch_eighteen, &kp N1 &kp N8 &kp SPC)
+		CHMAC(ch_nineteen, &kp N1 &kp N9 &kp SPC)
+		CHMAC(ch_twenty, &kp N2 &kp N0 &kp SPC)
 		CHMAC(ch_qwerty, &kp Q &kp W &kp SPC)
 	};
 };
