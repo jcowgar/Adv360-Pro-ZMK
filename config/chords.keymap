@@ -39,7 +39,6 @@ name: name##_macro {                  \
 / {
 	combos {
 		compatible = "zmk,combos";
-		CHORD(ch_one_two, &ch_one_two, 1 2)
 		CHORD(ch_are, &ch_are, 29 30 42)
 		CHORD(ch_as, &ch_as, 29 31)
 		CHORD(ch_do, &ch_do, 33 44)
@@ -49,21 +48,44 @@ name: name##_macro {                  \
 		CHORD(ch_the, &ch_the, 32 40 42)
 		CHORD(ch_these, &ch_these, 32 40 42 31)
 		CHORD(ch_to, &ch_to, 32 44)
+		CHORD(ch_ten, &ch_ten, 1 12)
+		CHORD(ch_eleven, &ch_eleven, 1 1)
+		CHORD(ch_twelve, &ch_twelve, 1 2)
+		CHORD(ch_thirteen, &ch_thirteen, 1 3)
+		CHORD(ch_fourteen, &ch_fourteen, 1 4)
+		CHORD(ch_fifteen, &ch_fifteen, 1 5)
+		CHORD(ch_sixteen, &ch_sixteen, 1 8)
+		CHORD(ch_seventeen, &ch_seventeen, 1 9)
+		CHORD(ch_eighteen, &ch_eighteen, 1 10)
+		CHORD(ch_nineteen, &ch_nineteen, 1 11)
+		CHORD(ch_twenty, &ch_twenty, 2 12)
+		CHORD(ch_qwerty, &ch_qwerty, 15 16)
 	};
 };
 
 / {
 	macros {
-		CHMAC(ch_one_two, &kp T &kp W &kp E &kp L &kp V &kp E)
-		CHMAC(ch_are, &kp A &kp R &kp E)
-		CHMAC(ch_as, &kp A &kp S)
-		CHMAC(ch_do, &kp D &kp O)
-		CHMAC(ch_had, &kp H &kp A &kp D)
-		CHMAC(ch_have, &kp H &kp A &kp V)
-		CHMAC(ch_that, &kp T &kp H &kp A)
-		CHMAC(ch_the, &kp T &kp H &kp E)
-		CHMAC(ch_these, &kp T &kp H &kp E &kp S)
-		CHMAC(ch_to, &kp T &kp O)
+		CHMAC(ch_are, &kp A &kp R &kp E &kp SPC)
+		CHMAC(ch_as, &kp A &kp S &kp SPC)
+		CHMAC(ch_do, &kp D &kp O &kp SPC)
+		CHMAC(ch_had, &kp H &kp A &kp D &kp SPC)
+		CHMAC(ch_have, &kp H &kp A &kp V &kp SPC)
+		CHMAC(ch_that, &kp T &kp H &kp A &kp SPC)
+		CHMAC(ch_the, &kp T &kp H &kp E &kp SPC)
+		CHMAC(ch_these, &kp T &kp H &kp E &kp S &kp SPC)
+		CHMAC(ch_to, &kp T &kp O &kp SPC)
+		CHMAC(ch_ten, &kp 1 &kp 0 &kp SPC)
+		CHMAC(ch_eleven, &kp 1 &kp 1 &kp SPC)
+		CHMAC(ch_twelve, &kp 1 &kp 2 &kp SPC)
+		CHMAC(ch_thirteen, &kp 1 &kp 3 &kp SPC)
+		CHMAC(ch_fourteen, &kp 1 &kp 4 &kp SPC)
+		CHMAC(ch_fifteen, &kp 1 &kp 5 &kp SPC)
+		CHMAC(ch_sixteen, &kp 1 &kp 6 &kp SPC)
+		CHMAC(ch_seventeen, &kp 1 &kp 7 &kp SPC)
+		CHMAC(ch_eighteen, &kp 1 &kp 8 &kp SPC)
+		CHMAC(ch_nineteen, &kp 1 &kp 9 &kp SPC)
+		CHMAC(ch_twenty, &kp 2 &kp 0 &kp SPC)
+		CHMAC(ch_qwerty, &kp Q &kp W &kp SPC)
 	};
 };
 
