@@ -39,6 +39,7 @@ name: name##_macro {                  \
 / {
 	combos {
 		compatible = "zmk,combos";
+		CHORD(ch_one_two, &ch_one_two, 1 2)
 		CHORD(ch_are, &ch_are, 29 30 42)
 		CHORD(ch_as, &ch_as, 29 31)
 		CHORD(ch_do, &ch_do, 33 44)
@@ -53,6 +54,7 @@ name: name##_macro {                  \
 
 / {
 	macros {
+		CHMAC(ch_one_two, &kp T &kp W &kp E &kp L &kp V &kp E)
 		CHMAC(ch_are, &kp A &kp R &kp E)
 		CHMAC(ch_as, &kp A &kp S)
 		CHMAC(ch_do, &kp D &kp O)
