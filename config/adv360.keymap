@@ -29,6 +29,16 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        tab_on_bk_del {
+            bindings = <&kp TAB>;
+            key-positions = <64 71>;
+            timeout-ms = <70>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
