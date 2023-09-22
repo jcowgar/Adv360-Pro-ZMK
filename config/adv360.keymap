@@ -74,11 +74,11 @@
 
         layer_3 {
             bindings = <
-&kp EQUAL  &kp N1    &kp N2    &kp N3  &kp N4            &kp N5  &trans                                           &trans     &kp N6  &kp N7            &kp N8     &kp N9   &kp N0    &kp MINUS
-&kp TAB    &kp Q     &kp W     &kp E   &kp R             &kp T   &trans                                           &trans     &kp Y   &kp U             &kp I      &kp O    &kp P     &kp BSLH
-&kp ESC    &kp A     &kp S     &kp D   &hm F LEFT_SHIFT  &kp G   &trans     &trans  &trans        &trans  &trans  &trans     &kp H   &hm J LEFT_SHIFT  &kp K      &kp L    &kp SEMI  &kp APOS
-&kp LSHFT  &kp Z     &kp X     &kp C   &kp V             &kp B                      &kp HOME      &trans                     &kp N   &kp M             &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-&kp LCTRL  &kp LALT  &kp LGUI  &trans  &kp BACKSPACE             &kp SPACE  &mo 2   &kp END       &trans  &mo 1   &kp ENTER          &kp DELETE        &trans     &trans   &trans    &trans
+&kp EQUAL  &kp N1    &kp N2    &kp N3  &kp N4          &kp N5  &trans                                           &trans     &kp N6  &kp N7          &kp N8     &kp N9   &kp N0    &kp MINUS
+&kp TAB    &kp Q     &kp W     &kp E   &kp R           &kp T   &trans                                           &trans     &kp Y   &kp U           &kp I      &kp O    &kp P     &kp BSLH
+&kp ESC    &kp A     &kp S     &kp D   &hm F NUMBER_1  &kp G   &trans     &trans  &trans        &trans  &trans  &trans     &kp H   &hm J NUMBER_0  &kp K      &kp L    &kp SEMI  &kp APOS
+&kp LSHFT  &kp Z     &kp X     &kp C   &kp V           &kp B                      &kp HOME      &trans                     &kp N   &kp M           &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+&kp LCTRL  &kp LALT  &kp LGUI  &trans  &kp BACKSPACE           &kp SPACE  &mo 2   &kp END       &trans  &mo 1   &kp ENTER          &kp DELETE      &trans     &trans   &trans    &trans
             >;
         };
     };
