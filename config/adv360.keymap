@@ -57,9 +57,9 @@
         layer_SYMBOLS {
             bindings = <
 &trans  &trans            &trans             &trans          &trans            &trans         &trans                                      &trans  &trans         &trans                &trans                 &trans            &trans     &trans
-&trans  &kp AT_SIGN       &kp EXCLAMATION    &kp LESS_THAN   &kp GREATER_THAN  &kp COLON      &trans                                      &trans  &kp SEMICOLON  &kp AMPERSAND         &kp PIPE               &kp DOLLAR        &kp CARET  &trans
-&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp HASH       &trans  &trans  &trans      &trans  &trans  &trans  &kp EQUAL      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE         &kp GRAVE  &trans
-&trans  &kp SLASH         &kp ASTERISK       &kp PLUS        &kp MINUS         &kp BACKSLASH                  &trans      &trans                  &kp PERCENT    &kp UNDERSCORE        &kp LESS_THAN          &kp GREATER_THAN  &kp SLASH  &trans
+&trans  &kp AT_SIGN       &kp EXCLAMATION    &kp LESS_THAN   &kp GREATER_THAN  &kp BACKSLASH  &trans                                      &trans  &kp SEMICOLON  &kp AMPERSAND         &kp PIPE               &kp DOLLAR        &kp CARET  &trans
+&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp EQUAL      &trans  &trans  &trans      &trans  &trans  &trans  &kp HASH       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE         &kp GRAVE  &trans
+&trans  &kp SLASH         &kp ASTERISK       &kp PLUS        &kp MINUS         &kp COLON                      &trans      &trans                  &kp PERCENT    &kp UNDERSCORE        &kp LESS_THAN          &kp GREATER_THAN  &kp SLASH  &trans
 &trans  &trans            &trans             &trans          &trans                           &trans  &trans  &trans      &trans  &trans  &trans                 &trans                &trans                 &trans            &trans     &trans
             >;
         };
