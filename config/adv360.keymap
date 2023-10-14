@@ -66,11 +66,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL         &kp N1  &kp N2  &kp N3             &kp N4         &kp N5  &trans                                                           &trans     &kp N6  &kp N7      &kp N8          &kp N9   &kp N0            &kp MINUS
-&mt LEFT_ALT TAB  &kp Q   &kp W   &kp D              &kp R          &kp F   &trans                                                           &none      &kp Y   &kp U       &kp I           &kp L    &kp SINGLE_QUOTE  &mt LEFT_ALT BACKSLASH
-&mt LCTRL ESC     &kp K   &kp A   &kp S              &kp T          &kp G   &trans     &kp LCTRL  &kp LEFT_ALT      &kp LEFT_ALT  &kp LCTRL  &none      &kp H   &kp N       &kp E           &kp O    &kp P             &mt LCTRL SEMICOLON
-&kp LSHFT         &kp Z   &kp X   &kp C              &kp V          &kp B                         &trans            &trans                              &kp J   &kp M       &kp COMMA       &kp DOT  &kp FSLH          &kp RSHFT
-&kp LEFT_GUI      &trans  &trans  &kp LC(BACKSPACE)  &kp BACKSPACE          &kp SPACE  &mo 2      &trans            &trans        &mo 1      &kp ENTER          &kp DELETE  &kp LC(DELETE)  &trans   &trans            &kp LEFT_GUI
+&kp EQUAL         &kp N1  &kp N2  &kp N3             &kp N4         &kp N5  &trans                                                                      &trans                &kp N6  &kp N7      &kp N8          &kp N9   &kp N0            &kp MINUS
+&mt LEFT_ALT TAB  &kp Q   &kp W   &kp D              &kp R          &kp F   &trans                                                                      &none                 &kp Y   &kp U       &kp I           &kp L    &kp SINGLE_QUOTE  &mt LEFT_ALT BACKSLASH
+&mt LCTRL ESC     &kp K   &kp A   &kp S              &kp T          &kp G   &trans                &kp LCTRL  &kp LEFT_ALT      &kp LEFT_ALT  &kp LCTRL  &none                 &kp H   &kp N       &kp E           &kp O    &kp P             &mt LCTRL SEMICOLON
+&kp LSHFT         &kp Z   &kp X   &kp C              &kp V          &kp B                                    &trans            &trans                                         &kp J   &kp M       &kp COMMA       &kp DOT  &kp FSLH          &kp RSHFT
+&kp LEFT_GUI      &trans  &trans  &kp LC(BACKSPACE)  &kp BACKSPACE          &mt LEFT_SHIFT SPACE  &mo 2      &trans            &trans        &mo 1      &mt LEFT_SHIFT ENTER          &kp DELETE  &kp LC(DELETE)  &trans   &trans            &kp LEFT_GUI
             >;
         };
 
