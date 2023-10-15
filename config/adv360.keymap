@@ -20,8 +20,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick_tap_ms = <175>;
+            tapping-term-ms = <125>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
@@ -39,26 +38,6 @@
             bindings = <&kp TAB>;
             key-positions = <55 56>;
         };
-
-        bkspc {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <41 42>;
-        };
-
-        delete {
-            bindings = <&kp DEL>;
-            key-positions = <43 42>;
-        };
-
-        underscore {
-            bindings = <&kp UNDER>;
-            key-positions = <32 31>;
-        };
-
-        colon {
-            bindings = <&kp COLON>;
-            key-positions = <41 54>;
-        };
     };
 
     keymap {
@@ -66,11 +45,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL         &kp N1  &kp N2  &kp N3             &kp N4             &kp N5  &trans                                                                      &trans                &kp N6  &kp N7                  &kp N8                   &kp N9   &kp N0            &kp MINUS
-&mt LEFT_ALT TAB  &kp Q   &kp W   &kp E              &kp R              &kp T   &trans                                                                      &none                 &kp Y   &kp U                   &kp I                    &kp O    &kp P             &mt LEFT_ALT BACKSLASH
-&mt LCTRL ESC     &kp A   &kp S   &hm LEFT_BRACE D   &hm RIGHT_BRACE F  &kp G   &trans                &kp LCTRL  &kp LEFT_ALT      &kp LEFT_ALT  &kp LCTRL  &none                 &kp H   &hm LEFT_PARENTHESIS J  &hm RIGHT_PARENTHESIS K  &kp L    &kp SINGLE_QUOTE  &mt LCTRL SEMICOLON
-&kp LSHFT         &kp Z   &kp X   &kp C              &kp V              &kp B                                    &trans            &trans                                         &kp N   &hm UNDERSCORE M        &kp COMMA                &kp DOT  &kp FSLH          &kp RSHFT
-&kp LEFT_GUI      &trans  &trans  &kp LC(BACKSPACE)  &kp BACKSPACE              &mt LEFT_SHIFT SPACE  &lt 2 A    &trans            &trans        &lt 1 T    &mt LEFT_SHIFT ENTER          &kp DELETE              &kp LC(DELETE)           &trans   &trans            &kp LEFT_GUI
+&kp EQUAL         &kp N1              &kp N2               &kp N3             &kp N4              &kp N5           &trans                                                                      &trans                &kp N6           &kp N7                  &kp N8                   &kp N9        &kp N0                  &kp MINUS
+&mt LEFT_ALT TAB  &hm AT_SIGN Q       &hm EXCLAMATION W    &hm LESS_THAN E    &hm GREATER_THAN R  &hm BACKSLASH T  &trans                                                                      &none                 &hm SEMICOLON Y  &hm AMPERSAND U         &hm PIPE I               &hm DOLLAR O  &hm CARET P             &mt LEFT_ALT BACKSLASH
+&mt LCTRL ESC     &hm LEFT_BRACKET A  &hm RIGHT_BRACKET S  &hm LEFT_BRACE D   &hm RIGHT_BRACE F   &hm EQUAL G      &trans                &kp LCTRL  &kp LEFT_ALT      &kp LEFT_ALT  &kp LCTRL  &none                 &hm HASH H       &hm LEFT_PARENTHESIS J  &hm RIGHT_PARENTHESIS K  &hm TILDE L   &hm GRAVE SINGLE_QUOTE  &mt LCTRL SEMICOLON
+&kp LSHFT         &hm SLASH Z         &hm ASTERISK X       &hm PLUS C         &hm MINUS V         &hm COLON B                                       &trans            &trans                                         &hm PERCENT N    &hm UNDERSCORE M        &kp COMMA                &kp DOT       &kp FSLH                &kp RSHFT
+&kp LEFT_GUI      &trans              &trans               &kp LC(BACKSPACE)  &kp BACKSPACE                        &mt LEFT_SHIFT SPACE  &lt 2 A    &trans            &trans        &lt 1 T    &mt LEFT_SHIFT ENTER                   &kp DELETE              &kp LC(DELETE)           &trans        &trans                  &kp LEFT_GUI
             >;
         };
 
