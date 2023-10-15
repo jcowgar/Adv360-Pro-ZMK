@@ -24,6 +24,14 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+        hml: hml {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HML";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+        };
     };
 
     combos {
@@ -52,9 +60,9 @@
             bindings = <
 &kp EQUAL         &kp N1              &kp N2               &kp N3             &kp N4                    &kp N5           &trans                                                           &trans  &kp N6           &kp N7                  &kp N8                   &kp N9        &kp N0                  &kp MINUS
 &mt LEFT_ALT TAB  &hm AT_SIGN Q       &hm EXCLAMATION W    &hm LESS_THAN E    &hm GREATER_THAN R        &hm BACKSLASH T  &trans                                                           &none   &hm SEMICOLON Y  &hm AMPERSAND U         &hm PIPE I               &hm DOLLAR O  &hm CARET P             &mt LEFT_ALT BACKSLASH
-&mt LCTRL ESC     &hm LEFT_BRACKET A  &hm RIGHT_BRACKET S  &hm LEFT_BRACE D   &hm RIGHT_BRACE F         &hm EQUAL G      &trans     &kp LCTRL  &kp LEFT_ALT      &kp LEFT_ALT  &kp LCTRL  &none   &hm HASH H       &hm LEFT_PARENTHESIS J  &hm RIGHT_PARENTHESIS K  &hm TILDE L   &hm GRAVE SINGLE_QUOTE  &mt LCTRL SEMICOLON
+&mt LCTRL ESC     &hm LEFT_BRACKET A  &hm RIGHT_BRACKET S  &hm LEFT_BRACE D   &hml 2 F                  &hm EQUAL G      &trans     &kp LCTRL  &kp LEFT_ALT      &kp LEFT_ALT  &kp LCTRL  &none   &hm HASH H       &hm LEFT_PARENTHESIS J  &hm RIGHT_PARENTHESIS K  &hm TILDE L   &hm GRAVE SINGLE_QUOTE  &mt LCTRL SEMICOLON
 &kp LSHFT         &hm SLASH Z         &hm ASTERISK X       &hm PLUS C         &hm MINUS V               &hm COLON B                            &trans            &trans                           &hm PERCENT N    &hm UNDERSCORE M        &kp COMMA                &kp DOT       &kp FSLH                &kp RSHFT
-&kp LEFT_GUI      &trans              &trans               &kp LC(BACKSPACE)  &mt LEFT_SHIFT BACKSPACE                   &kp SPACE  &lt 2 A    &trans            &trans        &lt 1 T    &kp E                    &mt LEFT_SHIFT DELETE   &kp LC(DELETE)           &trans        &trans                  &kp LEFT_GUI
+&kp LEFT_GUI      &trans              &trans               &kp LC(BACKSPACE)  &mt LEFT_SHIFT BACKSPACE                   &kp SPACE  &lt 2 A    &trans            &trans        &kp T      &kp E                    &mt LEFT_SHIFT DELETE   &kp LC(DELETE)           &trans        &trans                  &kp LEFT_GUI
             >;
         };
 
