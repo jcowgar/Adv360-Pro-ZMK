@@ -58,7 +58,7 @@
 
         default_layer {
             bindings = <
-&kp EQUAL         &kp N1              &kp N2               &kp N3             &kp N4                    &kp N5             &to 1                                                            &trans  &kp N6           &kp N7                  &kp N8                   &kp N9        &kp N0                  &kp MINUS
+&kp EQUAL         &kp N1              &kp N2               &kp N3             &kp N4                    &kp N5             &tog 1                                                           &trans  &kp N6           &kp N7                  &kp N8                   &kp N9        &kp N0                  &kp MINUS
 &mt LEFT_ALT TAB  &hm AT_SIGN Q       &hm EXCLAMATION W    &hm LESS_THAN E    &hm GREATER_THAN R        &hm RIGHT_BRACE T  &trans                                                           &none   &hm SEMICOLON Y  &hm AMPERSAND U         &hm PIPE I               &hm DOLLAR O  &hm CARET P             &mt LEFT_ALT BACKSLASH
 &mt LCTRL ESC     &hm LEFT_BRACKET A  &hm RIGHT_BRACKET S  &hm LEFT_BRACE D   &hml 3 F                  &hm EQUAL G        &trans     &kp LCTRL  &kp LEFT_ALT      &kp LEFT_ALT  &kp LCTRL  &none   &hm HASH H       &hm LEFT_PARENTHESIS J  &hm RIGHT_PARENTHESIS K  &hm TILDE L   &hm GRAVE SINGLE_QUOTE  &mt LCTRL SEMICOLON
 &kp LSHFT         &hm SLASH Z         &hm ASTERISK X       &hm PLUS C         &hm MINUS V               &hm COLON B                              &trans            &trans                           &hm PERCENT N    &hm UNDERSCORE M        &kp COMMA                &kp DOT       &kp FSLH                &kp RSHFT
@@ -68,11 +68,11 @@
 
         wild {
             bindings = <
-&none  &none    &none    &none    &none    &none  &none                                               &none      &none  &none    &none        &none         &none                    &none
-&none  &none    &none    &none    &none    &none  &none                                               &none      &none  &none    &none        &none         &none                    &none
-&none  &hm Q W  &hm P S  &hm G A  &hm F T  &none  &none      &none  &none      &none  &none           &none      &none  &hm M E  &hm COMMA O  &hm PERIOD I  &hm SLASH U              &none
-&none  &hm Z Z  &hm X C  &hm V D  &hm B R  &none                    &none      &none                             &none  &hm Y N  &hm K H      &hm J L       &hm SEMICOLON SEMICOLON  &none
-&none  &none    &none    &none    &none           &kp SPACE  &mo 2  &none      &none  &kp LEFT_SHIFT  &kp ENTER         &none    &none        &none         &none                    &none
+&trans  &trans   &trans   &trans   &trans   &trans  &trans                                                 &trans     &trans  &trans   &trans       &trans        &trans                   &trans
+&trans  &none    &none    &none    &none    &none   &trans                                                 &trans     &none   &none    &none        &none         &none                    &trans
+&trans  &hm Q W  &hm P S  &hm G A  &hm F T  &none   &trans     &trans  &trans      &trans  &trans          &trans     &none   &hm M E  &hm COMMA O  &hm PERIOD I  &hm SLASH U              &trans
+&trans  &hm Z Z  &hm X C  &hm V D  &hm B R  &none                      &trans      &trans                             &none   &hm Y N  &hm K H      &hm J L       &hm SEMICOLON SEMICOLON  &trans
+&trans  &trans   &trans   &trans   &trans           &kp SPACE  &mo 2   &trans      &trans  &kp LEFT_SHIFT  &kp ENTER          &trans   &trans       &trans        &trans                   &trans
             >;
         };
 
