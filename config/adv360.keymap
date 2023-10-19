@@ -13,6 +13,15 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+        hrl: hrl {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HRL";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            flavor = "balanced";
+        };
     };
 
     combos {
@@ -26,7 +35,7 @@
             bindings = <
 &trans    &kp N1  &kp N2  &kp N3  &kp N4    &kp N5         &trans                                                   &trans   &kp N6       &kp N7   &kp N8  &kp N9  &kp N0  &trans
 &trans    &kp B   &kp Y   &kp O   &kp U     &kp SQT        &trans                                                   &trans   &kp LS(DQT)  &kp L    &kp D   &kp W   &kp V   &kp Z
-&trans    &kp C   &kp I   &kp E   &kp A     &kp COMMA      &trans     &kp LCTRL  &kp LALT      &kp RALT  &kp RCTRL  &trans   &kp DOT      &kp H    &kp T   &kp S   &kp N   &kp Q
+&trans    &kp C   &kp I   &kp E   &hrl 1 A  &kp COMMA      &trans     &kp LCTRL  &kp LALT      &kp RALT  &kp RCTRL  &trans   &kp DOT      &kp H    &kp T   &kp S   &kp N   &kp Q
 &trans    &kp G   &kp X   &kp J   &kp K     &kp LS(UNDER)                        &trans        &trans                        &kp EQUAL    &kp R    &kp M   &kp F   &kp P   &trans
 &kp LGUI  &trans  &trans  &trans  &kp BSPC                 &kp SPACE  &kp LSHFT  &trans        &trans    &kp LSHFT  &kp RET               &kp DEL  &trans  &trans  &trans  &kp LGUI
             >;
