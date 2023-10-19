@@ -38,6 +38,33 @@
         };
     };
 
+    macros {
+        not_equal: not_equal {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EXCL &kp EQUAL>;
+            label = "NOT_EQUAL";
+        };
+        percent_curly: percent_curly {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp PERCENT &kp LEFT_BRACE>;
+            label = "PERCENT_CURLY";
+        };
+        double_ampersand: double_ampersand {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp AMPERSAND &kp AMPERSAND>;
+            label = "DOUBLE_AMPERSAND";
+        };
+        double_pipe: double_pipe {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp PIPE &kp PIPE>;
+            label = "DOUBLE_PIPE";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -63,11 +90,21 @@
 
         symbol {
             bindings = <
-&trans  &trans            &trans             &trans          &trans            &trans         &trans                                      &trans  &trans         &trans                &trans                 &trans      &trans        &trans
-&trans  &kp AT            &kp EXCL           &kp LESS_THAN   &kp GREATER_THAN  &kp BACKSLASH  &trans                                      &trans  &kp SEMICOLON  &kp AMPERSAND         &kp PIPE               &kp DOLLAR  &kp CARET     &trans
-&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp EQUAL      &trans  &trans  &trans      &trans  &trans  &trans  &kp HASH       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE   &kp GRAVE     &trans
-&trans  &kp SLASH         &kp ASTRK          &kp PLUS        &kp MINUS         &kp COLON                      &trans      &trans                  &kp PERCENT    &kp UNDERSCORE        &trans                 &trans      &kp QUESTION  &trans
-&trans  &trans            &trans             &trans          &trans                           &trans  &trans  &trans      &trans  &trans  &trans                 &trans                &trans                 &trans      &trans        &trans
+&trans  &trans            &trans             &trans          &trans            &trans         &trans                                                    &trans  &trans         &trans          &trans                 &trans      &trans        &trans
+&trans  &kp AT            &kp EXCL           &kp LESS_THAN   &kp GREATER_THAN  &kp BACKSLASH  &trans                                                    &trans  &kp SEMICOLON  &kp AMPERSAND   &kp PIPE               &kp DOLLAR  &kp CARET     &trans
+&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp EQUAL      &trans                &trans  &trans      &trans  &trans  &trans  &kp HASH       &trans          &kp RIGHT_PARENTHESIS  &kp TILDE   &kp GRAVE     &trans
+&trans  &kp SLASH         &kp ASTRK          &kp PLUS        &kp MINUS         &kp COLON                                    &trans      &trans                  &kp PERCENT    &kp UNDERSCORE  &trans                 &trans      &kp QUESTION  &trans
+&trans  &trans            &trans             &trans          &trans                           &kp LEFT_PARENTHESIS  &trans  &trans      &trans  &trans  &mo 3                  &trans          &trans                 &trans      &trans        &trans
+            >;
+        };
+
+        shift_nav {
+            bindings = <
+&trans  &trans  &trans      &trans  &trans  &trans  &trans                                      &trans  &trans          &trans             &trans        &trans  &trans  &trans
+&trans  &trans  &not_equal  &trans  &trans  &trans  &trans                                      &trans  &trans          &double_ampersand  &double_pipe  &trans  &trans  &trans
+&trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans          &trans             &trans        &trans  &trans  &trans
+&trans  &trans  &trans      &trans  &trans  &trans                  &trans      &trans                  &percent_curly  &trans             &trans        &trans  &trans  &trans
+&trans  &trans  &trans      &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans                  &trans             &trans        &trans  &trans  &trans
             >;
         };
     };
