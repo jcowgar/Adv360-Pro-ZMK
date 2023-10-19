@@ -22,13 +22,23 @@
     keymap {
         compatible = "zmk,keymap";
 
-        layer_0 {
+        engram {
             bindings = <
 &trans    &kp N1  &kp N2  &kp N3  &kp N4    &kp N5         &trans                                                   &trans   &kp N6       &kp N7   &kp N8  &kp N9  &kp N0  &trans
 &trans    &kp B   &kp Y   &kp O   &kp U     &kp SQT        &trans                                                   &trans   &kp LS(DQT)  &kp L    &kp D   &kp W   &kp V   &kp Z
 &trans    &kp C   &kp I   &kp E   &kp A     &kp COMMA      &trans     &kp LCTRL  &kp LALT      &kp RALT  &kp RCTRL  &trans   &kp DOT      &kp H    &kp T   &kp S   &kp N   &kp Q
 &trans    &kp G   &kp X   &kp J   &kp K     &kp LS(UNDER)                        &trans        &trans                        &kp EQUAL    &kp R    &kp M   &kp F   &kp P   &trans
 &kp LGUI  &trans  &trans  &trans  &kp BSPC                 &kp SPACE  &kp LSHFT  &trans        &trans    &kp LSHFT  &kp RET               &kp DEL  &trans  &trans  &trans  &kp LGUI
+            >;
+        };
+
+        nav {
+            bindings = <
+&trans  &trans    &trans    &trans     &trans  &trans  &trans                                              &trans  &trans  &trans     &trans    &trans     &trans  &trans
+&trans  &trans    &trans    &trans     &trans  &trans  &trans                                              &trans  &trans  &kp PG_UP  &kp UP    &kp PG_DN  &trans  &trans
+&trans  &kp LGUI  &kp LALT  &kp LCTRL  &trans  &trans  &trans          &trans  &trans      &trans  &trans  &trans  &trans  &kp LEFT   &kp DOWN  &kp RIGHT  &trans  &trans
+&trans  &trans    &trans    &trans     &trans  &trans                          &trans      &trans                  &trans  &kp HOME   &trans    &kp END    &trans  &trans
+&trans  &trans    &trans    &trans     &trans          &kp LEFT_SHIFT  &trans  &trans      &trans  &trans  &trans          &trans     &trans    &trans     &trans  &trans
             >;
         };
     };
