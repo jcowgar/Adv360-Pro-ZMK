@@ -106,11 +106,11 @@
 
         symbol {
             bindings = <
-&trans  &trans            &trans             &trans          &trans            &trans         &trans                                      &trans  &trans         &trans          &trans                 &trans      &trans        &trans
-&trans  &kp AT            &kp EXCL           &kp LESS_THAN   &kp GREATER_THAN  &kp BACKSLASH  &trans                                      &trans  &kp SEMICOLON  &kp AMPERSAND   &kp PIPE               &kp DOLLAR  &kp CARET     &trans
-&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp EQUAL      &trans  &trans  &trans      &trans  &trans  &trans  &kp HASH       &trans          &kp RIGHT_PARENTHESIS  &kp TILDE   &kp GRAVE     &trans
-&trans  &kp SLASH         &kp ASTRK          &kp PLUS        &kp MINUS         &kp COLON                      &trans      &trans                  &kp PERCENT    &kp UNDERSCORE  &trans                 &trans      &kp QUESTION  &trans
-&trans  &trans            &trans             &trans          &trans                           &mo 3   &trans  &trans      &trans  &trans  &trans                 &trans          &trans                 &trans      &trans        &trans
+&trans  &trans            &trans             &trans          &trans            &trans         &trans                                      &trans  &trans         &trans                &trans                 &trans      &trans        &trans
+&trans  &kp AT            &kp EXCL           &kp LESS_THAN   &kp GREATER_THAN  &kp BACKSLASH  &trans                                      &trans  &kp SEMICOLON  &kp AMPERSAND         &kp PIPE               &kp DOLLAR  &kp CARET     &trans
+&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp EQUAL      &trans  &trans  &trans      &trans  &trans  &trans  &kp HASH       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE   &kp GRAVE     &trans
+&trans  &kp SLASH         &kp ASTRK          &kp PLUS        &kp MINUS         &kp COLON                      &trans      &trans                  &kp PERCENT    &kp UNDERSCORE        &trans                 &trans      &kp QUESTION  &trans
+&trans  &trans            &trans             &trans          &trans                           &mo 3   &trans  &trans      &trans  &trans  &trans                 &trans                &trans                 &trans      &trans        &trans
             >;
         };
 
