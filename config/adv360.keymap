@@ -30,6 +30,33 @@
             quick-tap-ms = <200>;
             flavor = "tap-preferred";
         };
+
+        under_minus: under_minus {
+            compatible = "zmk,behavior-mod-morph";
+            label = "UNDER_MINUS";
+            bindings = <&kp UNDERSCORE>, <&kp MINUS>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        quotes: quotes {
+            compatible = "zmk,behavior-mod-morph";
+            label = "QUOTES";
+            bindings = <&kp DOUBLE_QUOTES>, <&kp SQT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        colon_semi: colon_semi {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COLON_SEMI";
+            bindings = <&kp COLON>, <&kp SEMICOLON>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     combos {
@@ -37,29 +64,63 @@
 
         lparen {
             bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <41 42>;
+            key-positions = <55 56>;
             timeout-ms = <125>;
             require-prior-idle-ms = <150>;
+            layers = <0>;
         };
 
         rparen {
             bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <42 43>;
+            key-positions = <56 57>;
             timeout-ms = <125>;
             require-prior-idle-ms = <150>;
+            layers = <0>;
+        };
+
+        lbrace {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <48 49>;
+            layers = <0>;
+        };
+
+        rbrace {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <50 49>;
+            layers = <0>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <18 17>;
+        };
+
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <23 24>;
+        };
+
+        lsquare {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <47 48>;
+        };
+
+        rbracket {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <48 49>;
         };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        hd-promethium {
             bindings = <
-&kp EQUAL  &kp N1        &kp N2        &kp N3                &kp N4          &kp N5  &none                                                    &mo 2      &kp N6     &kp N7          &kp N8            &kp N9        &kp N0        &kp MINUS
-&kp TAB    &kp F         &kp P         &kp D                 &kp L           &kp X   &none                                                    &none      &kp SEMI   &kp U           &kp O             &kp Y         &kp B         &kp Z
-&kp LCTRL  &hm_t LGUI S  &hm_t LALT N  &hm_t LEFT_CONTROL T  &hm_t LSHIFT H  &kp K   &none  &none     &none         &none      &none          &none      &kp COMMA  &hm_t LSHIFT A  &hm_t LCTRL E     &hm_t LALT I  &hm_t LGUI C  &kp Q
-&kp BSLH   &kp V         &kp W         &kp G                 &kp M           &kp J                    &kp HOME      &kp PG_UP                            &kp MINUS  &kp PERIOD      &kp SINGLE_QUOTE  &kp EQUAL     &kp FSLH      &kp ENTER
-&mo 1      &kp GRAVE     &none         &kp LEFT              &kp RIGHT               &kp R  &kp LGUI  &kp END       &kp PG_DN  &kp BACKSPACE  &kp SPACE             &kp UP          &kp DOWN          &kp LBKT      &kp RBKT      &mo 1
+&kp GRAVE   &kp N9        &kp N3        &kp N1                &kp N5          &kp N7  &none                                                     &mo 2      &kp N6        &kp N2          &kp N0         &kp N4        &kp N8        &kp MINUS
+&kp TAB     &kp F         &kp P         &kp D                 &kp L           &kp X   &none                                                     &none      &colon_semi   &kp U           &kp O          &kp Y         &kp B         &kp Z
+&kp ESCAPE  &hm_t LGUI S  &hm_t LALT N  &hm_t LEFT_CONTROL T  &hm_t LSHIFT H  &kp K   &none  &none      &none         &none      &none          &none      &kp COMMA     &hm_t LSHIFT A  &hm_t LCTRL E  &hm_t LALT I  &hm_t LGUI C  &kp Q
+&kp BSLH    &kp V         &kp W         &kp G                 &kp M           &kp J                     &kp HOME      &kp PG_UP                            &under_minus  &kp PERIOD      &quotes        &kp EQUAL     &kp FSLH      &none
+&mo 1       &none         &none         &kp LEFT              &kp RIGHT               &kp R  &kp ENTER  &kp END       &kp PG_DN  &kp BACKSPACE  &kp SPACE                &kp UP          &kp DOWN       &none         &none         &mo 1
             >;
         };
 
